@@ -1,0 +1,402 @@
+
+body{
+	font-family: 'Play', sans-serif;
+	overflow-x: hidden!important;
+	position: relative;
+	color: $text-main-color;
+	background: $bg-main-color;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.section {
+    position: relative;
+    z-index: 0;
+}
+
+.bg-image {
+    z-index: -1;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 42px;
+}
+
+.fs-xl {
+    font-size: 38px;
+}
+
+.fs-lg {
+    font-size: 32px;
+}
+
+.fs-md {
+    font-size: 24px;
+}
+
+.fs-sm {
+    font-size: 20px;
+}
+
+.section-hero {
+    margin-top: $navbar-height;
+}
+
+.title-hero {
+    position: absolute;
+    left: 5%;
+    top: 3%;
+    color: #8990e0;
+    & .emphasize {
+        color: $white-color;
+        font-weight: bold;
+    }
+    max-width: 640px;
+}
+
+.img-hero {
+    margin-top: 120px;
+}
+
+.info-panel {
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    width: 100%;
+}
+
+.about-panel {
+    position: absolute;    
+    top: 30%;
+    left: 0%;
+    width: 100%;
+}
+
+.about-desc {
+    color: #027ef3;
+}
+
+.token-info-panel {
+    position: absolute;    
+    top: 72%;
+    left: 0%;
+    width: 100%;
+}
+
+.token-info-desc {
+    color: #ba00ff;
+}
+
+.section-description,
+.section-team,
+.section-partner {
+    background-color: #0b1324;
+}
+
+.section-description {
+    padding: 40px 0;    
+    overflow: hidden;
+}
+
+.game-card {
+    position: relative;
+    margin: 0 -8%;
+
+    & .card-title {
+        position: absolute;
+        width: 100%;
+        top: 6%;
+        left: 0;
+        text-align: center;
+        white-space: nowrap;
+        font-size: 32px;
+    }
+
+    & .card-descrition {
+        position: absolute;
+        left: 12%;
+        top: 20%;
+        width: 80%;
+        font-size: 20px;
+    }
+
+    &.card01 .card-image {
+        margin: -15%;
+    }
+    &.card02 .card-image {
+        margin: -10%;
+    }
+    &.card03 .card-image {
+        margin: -15%;
+    }
+    &.card04 .card-image {
+        margin-left: -10%;
+        margin-top: -34%;
+        margin-right: -10%;
+    }
+    &.card05 .card-image {
+        margin: -15%;
+        margin-top: 50%;
+    }
+}
+
+.section-team {
+    & .team-desc {
+        color: #7e3efe;
+    }
+
+    & .team-member {
+        & .name {
+            font-size: 20px;
+        }
+        & .position {
+            font-size: 18px;
+            color: #015fc9;
+        }
+    }
+}
+
+.section-social {
+    background-image: url(../images/bg03.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    & .social-desc {
+        color: #7e3efe;
+    }
+
+    & .social-mark {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+
+        & .circle {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            min-width: 100px;
+            border: 10px solid transparent;
+            border-radius: 50%;
+            background-color: $white-color;
+            box-shadow: 4px 0px 8px rgb(15 15 15 / 80%)
+        }
+        & .bar {
+            display: inline-block;
+            min-width: 280px;
+            height: 70px;
+            margin-left: -70px;
+            border-radius: 75px;
+            color: $white-color;
+            font-size: 24px;
+            line-height: 70px;
+            text-align: center;
+            padding-left: 70px;
+        }
+        
+        &.twitter {
+            & .circle {
+                color: #5a99ec;
+                border-color: #5a99ec;
+            }
+            & .bar {
+                background-color: #5a99ec;
+            }
+        }
+        &.discord {
+            & .circle {
+                color: #5c65ed;
+                border-color: #5c65ed;
+            }
+            & .bar {
+                background-color: #5c65ed;
+            }
+        }
+        &.telegram {
+            & .circle {
+                color: #33abe0;
+                border-color: #33abe0;
+            }
+            & .bar {
+                background-color: #33abe0;
+            }
+        }
+    }
+}
+
+.btn-connect {
+    background: linear-gradient(to right, #6717cd, #2871fa);
+    border-radius: 40px;
+    font-size: 18px;
+    line-height: 22px;
+    color: $white-color;
+    border: 0px;
+}
+
+.social-icon {
+    color: $white-color;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    margin: 0px 4px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    &.twitter {
+        background-color: #5a99ec;
+    }
+    &.discord {
+        background-color: #5c65ed;
+    }
+    &.telegram {
+        background-color: #33abe0;
+    }
+
+    &:hover {
+        color: $white-color;
+    }
+}
+
+.footer {
+    background: $bg-footer-color;
+
+    & .text-desc {
+        color: $text-footer-desc;
+    }
+}
+
+.divider-fade:before {
+    content: '';
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background: radial-gradient(ellipse at center,#d1dbe7 0,rgba(255,255,255,0) 75%);
+}
+
+@media (max-width: 1199px){
+
+    .about-panel {
+        top: 25%;
+    }
+    
+    .token-info-panel {
+        top: 65%;
+    }
+        
+    .game-card {
+        & .card-title {
+            font-size: 24px;
+        }
+    
+        & .card-descrition {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 991px){
+
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    .fs-xl {
+        font-size: 24px;
+    }    
+    .fs-lg {
+        font-size: 20px;
+    }    
+    .fs-md {
+        font-size: 18px;
+    }    
+    .fs-sm {
+        font-size: 14px;
+    }
+
+    .token-info-panel {
+        top: 68%;
+    }
+    .game-card {
+        & .card-title {
+            font-size: 32px;
+        }
+    
+        & .card-descrition {
+            font-size: 24px;
+        }
+    }
+}
+
+@media (max-width: 767px){
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    
+    .about-panel {
+        top: 30%;
+    }
+    
+    .game-card {
+        & .card-title {
+            font-size: 24px;
+        }
+    
+        & .card-descrition {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 575px){
+    
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    .fs-xl {
+        font-size: 20px;
+    }    
+    .fs-lg {
+        font-size: 16px;
+    }    
+    .fs-md {
+        font-size: 14px;
+    }    
+    .fs-sm {
+        font-size: 12px;
+    }
+
+    .about-panel {
+        top: 28%;
+    }
+    
+    .game-card {
+        & .card-title {
+            font-size: 20px;
+        }
+    
+        & .card-descrition {
+            font-size: 12px;
+        }
+    }
+}
